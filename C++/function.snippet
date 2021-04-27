@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>parameterized function</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>Create a function with parameter section</Description>
+            <Shortcut>func</Shortcut>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal default="true">
+                    <ID>returnValue</ID>
+                    <ToolTip>Return value</ToolTip>
+                    <Default>void</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>functionName</ID>
+                    <Default>functionName</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>parameterSection</ID>
+                    <Default>int value</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>body</ID>
+                    <Default>{}</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP" Format="CData">
+                <![CDATA[$returnValue$ functionName($parameterSection$) $body$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

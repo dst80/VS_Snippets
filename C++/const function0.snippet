@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Parameterless const function</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>Create a copy assignment operator</Description>
+            <Shortcut>cfunc0</Shortcut>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal default="true">
+                    <ID>returnValue</ID>
+                    <ToolTip>Return value</ToolTip>
+                    <Default>void</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>functionName</ID>
+                    <Default>functionName</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>body</ID>
+                    <Default>{}</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP" Format="CData">
+                <![CDATA[$returnValue$ functionName() const $body$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
