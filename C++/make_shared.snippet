@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>make_shared</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>Create a make_shared expression</Description>
+            <Shortcut>mksp</Shortcut>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>type</ID>
+                    <Default>T</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>variable</ID>
+                    <Default>variable</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>parameter</ID>
+                    <Default>parameter</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP">
+                <![CDATA[auto variable = std::make_shared<$type$> ($parameter$);]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>memory</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
