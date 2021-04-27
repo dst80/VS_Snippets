@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>create a base class</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>create a base class. Good for interfaces</Description>
+            <Shortcut>bclass</Shortcut>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>classname</ID>
+                    <ToolTip>Class name</ToolTip>
+                    <Function>ClassName()</Function>
+                    <Default>class</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP" Format="CData">
+                <![CDATA[class $classname$ () 
+{
+$classname$ (const $classname$& other) = default;
+$classname$ (const $classname$&& other) = default;
+
+$classname$& operator= (const $classname$& other) = default;
+$classname$& operator= ($classname$&& other) = default;
+    
+virtual ~$classname$ () = default;$end$
+};]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
