@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>For each loop</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>Create a for each loop</Description>
+            <Shortcut>fore</Shortcut>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>container</ID>
+                    <Default>container</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>beginIterator</ID>
+                    <Default>begin()</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>endIterator</ID>
+                    <Default>end()</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>passthrough</ID>
+                    <Default>this</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>element</ID>
+                    <Default>element</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP" Format="CData">
+                <![CDATA[std::for_each($container$.$beginIterator$, $container$.$endIterator$, [$passthrough$](const auto& $element$) {$selected$$end$});]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
