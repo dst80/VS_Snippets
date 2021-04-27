@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>array</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>Create a std::array</Description>
+            <Shortcut>arr</Shortcut>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>type</ID>
+                    <Default>T</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>size</ID>
+                    <Default>1</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>variable</ID>
+                    <Default>variable</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP">
+                <![CDATA[std::array<$type$, $size$> $variable$;]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>vector</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
