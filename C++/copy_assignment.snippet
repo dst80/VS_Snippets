@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Copy Assignment</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>Create a copy assignment operator</Description>
+            <Shortcut>cassign</Shortcut>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal default="true" Editable="false">
+                    <ID>classname</ID>
+                    <ToolTip>Class name</ToolTip>
+                    <Function>TypeName()</Function>
+                    <Default>class</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>other</ID>
+                    <Default>other</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>body</ID>
+                    <Default>=default;</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP" Format="CData">
+                <![CDATA[$classname$& operator=(const $classname$& $other$) $body$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
