@@ -2,10 +2,10 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
-            <Title>gtestclass</Title>
-            <Shortcut>gtestclass</Shortcut>
+            <Title>gtesf</Title>
             <Author>Dennis Stanze</Author>
-            <Description>Create a basic google test class file</Description>
+            <Description>Create fix google test case</Description>
+            <Shortcut>gtestf</Shortcut>
             <SnippetTypes>
                 <SnippetType>Expansion</SnippetType>
             </SnippetTypes>
@@ -13,13 +13,9 @@
         <Snippet>
             <Declarations>
                 <Literal Editable="true">
-                    <ID>namespace</ID>
-                    <Default>MyNamespace</Default>
-                </Literal>
-                <Literal Editable="true">
                     <ID>name</ID>
                     <Function>FileName()</Function>
-                    <Default>MyTestClass</Default>
+                    <Default>class</Default>
                 </Literal>
                 <Literal Editable="true">
                     <ID>testcase</ID>
@@ -27,23 +23,10 @@
                 </Literal>
             </Declarations>
             <Code Language="CPP" Format="CData">
-                <![CDATA[#include <gtest/gtest.h>
-#include <gmock/gmock-matchers.h>
-                
-using namespace ::testing;
-                
-namespace $namespace$
-{
-class $name$Test : public ::testing::Test
-{
-};
-                
-TEST_F($name$, $testcase$)
+                <![CDATA[TEST_F ($name$, $testcase$)
 {
 ASSERT_THAT($end$);
-};
-} // namespace $namespace$
-]]>
+};]]>
             </Code>
         </Snippet>
     </CodeSnippet>
