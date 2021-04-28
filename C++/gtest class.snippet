@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>GTest class</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>Create a basic google test class file</Description>
+            <Shortcut>gclass</Shortcut>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>namespace</ID>
+                    <Default>MyNamespace</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>$className</ID>
+                    <Function>FileName()</Function>
+                    <Default>class</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>testName</ID>
+                    <Default>CreationNoFailure</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP" Format="CData">
+                <![CDATA[#include <gtest/gtest.h>
+#include <gmock/gmock-matchers.h>
+                
+using namespace ::testing;
+                
+namespace $namespace$
+{
+class $className$Test : public ::testing::Test
+{
+};
+                
+TEST_F($className$Test, $testName$)
+{
+ASSERT_THAT($end$);
+};
+} // namespace $namespace$
+]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
