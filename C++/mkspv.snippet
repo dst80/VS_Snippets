@@ -2,16 +2,20 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
-            <Title>mksp</Title>
+            <Title>mkspv</Title>
             <Author>Dennis Stanze</Author>
             <Description>Create a make_shared expression</Description>
-            <Shortcut>mksp</Shortcut>
+            <Shortcut>mkspv</Shortcut>
             <SnippetTypes>
                 <SnippetType>Expansion</SnippetType>
             </SnippetTypes>
         </Header>
         <Snippet>
             <Declarations>
+                <Literal Editable="true">
+                    <ID>variable</ID>
+                    <Default>variable</Default>
+                </Literal>
                 <Literal Editable="true">
                     <ID>type</ID>
                     <Default>T</Default>
@@ -22,7 +26,7 @@
                 </Literal>
             </Declarations>
             <Code Language="CPP">
-                <![CDATA[std::make_shared<$type$> ($parameter$);]]>
+                <![CDATA[auto $variable$ = std::make_shared<$type$> ($parameter$);]]>
             </Code>
             <Imports>
                 <Import>
