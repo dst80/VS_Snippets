@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>func</Title>
+            <Author>Dennis Stanze</Author>
+            <Description>Surrounds with function name</Description>
+            <Shortcut>func</Shortcut>
+            <SnippetTypes>
+				<SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>functionName</ID>
+                    <Default>func</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp" Format="CData">
+                <![CDATA[$functionName$($selected$$end$)]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
