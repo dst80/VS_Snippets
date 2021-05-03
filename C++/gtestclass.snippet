@@ -19,7 +19,7 @@
                 <Literal Editable="true">
                     <ID>name</ID>
                     <Function>FileName()</Function>
-                    <Default>MyTestClass</Default>
+                    <Default>MyTestClass_Test</Default>
                 </Literal>
                 <Literal Editable="true">
                     <ID>testcase</ID>
@@ -34,14 +34,14 @@ using namespace ::testing;
                 
 namespace $namespace$
 {
-class $name$Test : public ::testing::Test
+class $name$ : public ::testing::Test
 {
 };
                 
 TEST_F($name$, $testcase$)
 {
 ASSERT_THAT($end$);
-};
+}
 } // namespace $namespace$
 ]]>
             </Code>
