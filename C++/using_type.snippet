@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>usingtype</Title>
+            <Shortcut>usingtype</Shortcut>
+            <Description>Create an using namespace expression</Description>
+            <Author>Dennis Stanze</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>alias_type</ID>
+                    <ToolTip>Alias type</ToolTip>
+                    <Default>some_alias_type_t</Default>
+                </Literal>
+                <Literal>
+                    <ID>type</ID>
+                    <ToolTip>Type to create an alias</ToolTip>
+                    <Default>some_type_t</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="cpp" Format="CData"><![CDATA[using $alias_type$ = $type$;$end$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
