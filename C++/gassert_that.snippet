@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>gassert</Title>
+            <Shortcut>gassert</Shortcut>
+            <Author>Dennis Stanze</Author>
+            <Description>Create an ASSERT_THAT statement</Description>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>value1</ID>
+                    <Default>some_variable</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>matcher</ID>
+                    <Default>Eq</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>value2</ID>
+                    <Default>some_other_variable</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP" Format="CData">
+                <![CDATA[ASSERT_THAT ($value1$, $matcher$ ($value2$));]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
