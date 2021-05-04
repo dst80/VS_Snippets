@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>try</Title>
-			<Shortcut>try</Shortcut>
-			<Description>Code snippet for try catch</Description>
-			<Author>Dennis Stanze</Author>
-			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
-				<SnippetType>SurroundsWith</SnippetType>
-			</SnippetTypes>
-		</Header>
-		<Snippet>
-			<Declaration>
-				<Literal>
-					<ID>exception</ID>
-					<Default>std::exception</Default>
-				</Literal>
-			</Declaration>
-			<Code Language="cpp"><![CDATA[try
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>try</Title>
+            <Shortcut>try</Shortcut>
+            <Description>Code snippet for try catch</Description>
+            <Author>Dennis Stanze</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declaration>
+                <Literal>
+                    <ID>exception</ID>
+                    <Default>std::exception</Default>
+                </Literal>
+            </Declaration>
+            <Code Language="cpp"><![CDATA[try
 {
 $selected$
 }
@@ -26,7 +26,7 @@ catch (const $exception$ & exception)
 {
 $end$
 }]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
 </CodeSnippets>

@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>classi</Title>
-			<Shortcut>classi</Shortcut>
-			<Description>Code snippet for class with inline constructor/destructor</Description>
-			<Author>Dennis Stanze</Author>
-			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
-				<SnippetType>SurroundsWith</SnippetType>
-			</SnippetTypes>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>class</ID>
-					<ToolTip>Class name</ToolTip>
-					<Function>FileName()</Function>
-					<Default>className</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="cpp"><![CDATA[class $class$
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>classi</Title>
+            <Shortcut>classi</Shortcut>
+            <Description>Code snippet for class with inline constructor/destructor</Description>
+            <Author>Dennis Stanze</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>class</ID>
+                    <ToolTip>Class name</ToolTip>
+                    <Function>FileName()</Function>
+                    <Default>className</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="cpp"><![CDATA[class $class$
 {
 public:
 $class$()
 {
 }
-	
+    
 ~$class$()
 {
 }
@@ -35,7 +35,7 @@ private:
 $selected$$end$
 };
 ]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
 </CodeSnippets>
