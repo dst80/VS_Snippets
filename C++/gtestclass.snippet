@@ -17,7 +17,7 @@
                     <Default>MyNamespace</Default>
                 </Literal>
                 <Literal Editable="true">
-                    <ID>name</ID>
+                    <ID>classname</ID>
                     <Function>FileName()</Function>
                     <Default>MyTestClass_Test</Default>
                 </Literal>
@@ -26,7 +26,7 @@
                     <Default>CreationNoFailure</Default>
                 </Literal>
             </Declarations>
-            <Code Language="CPP" Format="CData">
+            <Code Language="cpp">
                 <![CDATA[#include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
                 
@@ -34,11 +34,11 @@ using namespace ::testing;
                 
 namespace $namespace$
 {
-class $name$ : public ::testing::Test
+class $classname$ : public ::testing::Test
 {
 };
                 
-TEST_F($name$, $testcase$)
+TEST_F($classname$, $testcase$)
 {
 ASSERT_THAT($end$);
 }
