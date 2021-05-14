@@ -20,14 +20,15 @@
                 </Literal>
             </Declarations>
             <Code Language="CPP" Format="CData">
-                <![CDATA[class $classname$ () 
+                <![CDATA[class $classname$
 {
+public:
 $classname$ (const $classname$& other) = default;
-$classname$ (const $classname$&& other) = default;
+$classname$ ($classname$&& other) = default;
 
 $classname$& operator= (const $classname$& other) = default;
 $classname$& operator= ($classname$&& other) = default;
-    
+
 virtual ~$classname$ () = default;$end$
 };]]>
             </Code>
