@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
-            <Title>Ne</Title>
-            <Shortcut>Ne</Shortcut>
-            <Description>Code snippet for Ne statement</Description>
+            <Title>Gt</Title>
+            <Shortcut>Gt</Shortcut>
+            <Description>Code snippet for Gt statement</Description>
             <Author>Dennis Stanze</Author>
             <SnippetTypes>
                 <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,13 @@
             </SnippetTypes>
         </Header>
         <Snippet>
-            <Code Language="cpp"><![CDATA[Ne($selected$)$end$]]>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>expression</ID>
+                    <Default></Default>
+                </Literal>
+            </Declarations>
+            <Code Language="cpp"><![CDATA[Gt($expression$$selected$)$end$]]>
             </Code>
         </Snippet>
     </CodeSnippet>
