@@ -23,21 +23,21 @@
                 </Literal>
                 <Literal Editable="true">
                     <ID>testcase</ID>
-                    <Default>CreationNoFailure</Default>
+                    <Default>SetUpTestNotFail</Default>
                 </Literal>
             </Declarations>
             <Code Language="cpp">
-                <![CDATA[#include <gtest/gtest.h>
-#include <gmock/gmock-matchers.h>
-                
+                <![CDATA[#include <gmock/gmock-matchers.h>
+#include <gtest/gtest.h>
+
 using namespace ::testing;
-                
+
 namespace $namespace$
 {
-class $classname$ : public ::testing::Test
+class $classname$ : public ::Test
 {
 };
-                
+
 TEST_F($classname$, $testcase$)
 {
 ASSERT_THAT($end$);
