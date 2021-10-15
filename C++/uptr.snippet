@@ -8,13 +8,14 @@
             <Shortcut>uptr</Shortcut>
             <SnippetTypes>
                 <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
             </SnippetTypes>
         </Header>
         <Snippet>
             <Declarations>
                 <Literal Editable="true">
                     <ID>type</ID>
-                    <Default>T</Default>
+                    <Default></Default>
                 </Literal>
                 <Literal Editable="true">
                     <ID>variable</ID>
@@ -22,7 +23,7 @@
                 </Literal>
             </Declarations>
             <Code Language="CPP">
-                <![CDATA[std::unique_ptr<$type$> $variable$$end$;]]>
+                <![CDATA[std::unique_ptr<$type$$selected$> $variable$$end$;]]>
             </Code>
             <Imports>
                 <Import>
