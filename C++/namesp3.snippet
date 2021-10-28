@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>namesp3</Title>
+            <Shortcut>namesp3</Shortcut>
+            <Description>Create three namespace with namespace identifier at the end of the namespace</Description>
+            <Author>Dennis Stanze</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>namespace1</ID>
+                    <ToolTip>Namespace name</ToolTip>
+                    <Default>Namespace1</Default>
+                </Literal>
+                <Literal>
+                    <ID>namespace2</ID>
+                    <ToolTip>Namespace name</ToolTip>
+                    <Default>Namespace2</Default>
+                </Literal>
+                <Literal>
+                    <ID>namespace3</ID>
+                    <ToolTip>Namespace name</ToolTip>
+                    <Default>Namespace3</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="cpp" Format="CData"><![CDATA[namespace $namespace1$
+{
+namespace $namespace2$
+{
+namespace $namespace3$
+{
+    $selected$ $end$
+} // namespace $namespace3$
+} // namespace $namespace2$
+} // namespace $namespace1$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
