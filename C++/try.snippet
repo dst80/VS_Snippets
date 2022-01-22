@@ -13,16 +13,16 @@
         </Header>
         <Snippet>
             <Declaration>
-                <Literal>
+                <Literal Editable="true">
                     <ID>exception</ID>
-                    <Default>std::exception</Default>
+                    <Default>Exception</Default>
                 </Literal>
             </Declaration>
-            <Code Language="cpp"><![CDATA[try
+            <Code Language="CPP"><![CDATA[try
 {
 $selected$
 }
-catch (const $exception$& exception)
+catch (const $exception$& e)
 {
 $end$
 }]]>
