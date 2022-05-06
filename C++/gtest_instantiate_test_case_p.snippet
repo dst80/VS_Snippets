@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>gtestInstantiate</Title>
+            <Shortcut>gtestinstanticate</Shortcut>
+            <Author>Dennis Stanze</Author>
+            <Description>Create an INSTANTIATE_TEST_CASE_P statement</Description>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>test_name</ID>
+                    <Default>ValidateforParameters</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>test_class</ID>
+                    <Default>SomeClassTest</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CPP" Format="CData">
+                <![CDATA[INSTANTIATE_TEST_CASE_P(
+$test_name$,
+$test_class$,
+::testing::Values(
+    $selected$$end$
+),);
+                }]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
